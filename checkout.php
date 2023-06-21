@@ -3,6 +3,7 @@ session_start();
 
 include 'server/connection.php';
 
+//set time zone
 date_default_timezone_set('Europe/Sofia');
 
 if ( isset( $_POST['submit'] ) ) {
