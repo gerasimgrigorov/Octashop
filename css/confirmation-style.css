@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+body{
+  font-family: "Source Sans Pro", sans-serif;
+}
+.confirmation-container {
+  text-align: center;
+  margin: 10% 0%;
+}
+#confirmation-gif {
+  width: 130px;
+  margin: 1%;
+}
+h2{
+  font-size: 28px;
+}
+.success-lrg{
+  text-align: center;
+  padding: 0% 20%;
+  font-size: 26px;
+}
+.divider{
+  width: 40%;
+	height: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #484b53;
+	margin-top: 18px;
+	margin-bottom: 26px;
+}
+.primary{
+  margin: 40px;
+}
+.p-mssg{
+  font-size: 20px;
+}
+.btn-shop{
+  text-decoration: none;
+  color: white;
+  padding: 15px 24px;
+  border-radius: 10px;
+  background-color: rgb(12, 109, 183);
+  font-size: 26px;
+}
+@media only screen and (max-width: 768px) {
+  .confirmation-container {
+      margin: 14% 0%;
+  }
+  #confirmation-gif {
+      width: 100px;
+  }
+  h2{
+      font-size: 25px;
+  }
+  .success-lrg{
+      font-size: 22px;
+  }
+  .p-mssg{
+      font-size: 18px;
+  }
+  .btn-shop{
+      padding: 12px 20px;
+      font-size: 22px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .confirmation-container {
+      margin: 10% 0%;
+  }
+  #confirmation-gif {
+      width: 90px;
+  }
+  h2{
+      font-size: 22px;
+  }
+  .success-lrg{
+      font-size: 20px;
+      padding: 0% 16%;
+  }
+  .p-mssg{
+      font-size: 16px;
+  }
+  .btn-shop{
+      padding: 10px 16px;
+      font-size: 20px;
+  }
+  .primary{
+      margin: 8px;
+  }
+}

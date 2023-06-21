@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  --color1: #1a1a1a;
+  --color2:  #E3E6F3 ;
+}
+.logo{
+  width: 132px;     
+  height: 107px;     
+  margin: 0;
+}
+.logo-box{
+  padding: 8px 35px 8px 0px;
+}
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 0;
+  position: relative;
+  background-color: var(--color2);
+  padding: 6px 100px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.06);
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu li {
+  padding: 0 25px;
+}
+.menu li a {
+  font-size: 30px;
+  font-weight: bolder;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color1);
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  transition: 0.2s ease;
+}
+.menu li a:hover{
+  color: #353535;
+}
+
+.open-menu , .close-menu {
+  position: absolute;
+  color: var(--color1);
+  cursor: pointer;
+  font-size: 2.8rem;
+  display: none;
+}
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
+#check {
+  display: none;
+}
+@media only screen and (max-width: 1200px){
+  .nav-bar {
+    padding: 8px 40px; 
+  }
+  .menu li {
+    padding: 0 14px;
+  }
+}
+@media only screen and (max-width: 805px){
+  .logo{
+    width: 105px;     
+    height: 92px;     
+    margin: 0;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: var(--color2);
+    transition: all 0.2s ease-in-out;
+  }
+  .menu li {
+    margin-top: 30px;
+  }
+  .menu li a {
+    padding: 4px;
+    font-size: 34px;
+  }
+  .open-menu , .close-menu {
+    display: block;
+  }
+  #check:checked ~ .menu {
+    right: 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .logo{
+    width: 112px;     
+    height: 99px;     
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .logo{
+    width: 100px;     
+    height: 84px;     
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 325px) {
+  .nav-bar{
+    padding: 8px 18px;
+  }
+  .logo{
+    width: 89px;     
+    height: 72px;     
+    margin: 0;
+  }
+  .open-menu , .close-menu {
+    font-size: 2.2rem !important;
+  }
+}
