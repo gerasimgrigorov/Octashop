@@ -2,7 +2,7 @@
 session_start();
 
 if (!$_SESSION['user']) {
-    // If no logged-in user, redirect to login.php
+    // ако няма логнат потребител се прави пренасочване към login.php
     header("location: login.php");
     exit;
 }
